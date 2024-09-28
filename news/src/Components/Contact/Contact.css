@@ -1,0 +1,78 @@
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* Adjust top margin to account for the fixed header */
+  margin-top: 100px; /* Adjust this value based on the height of your fixed header */
+  margin-bottom: 25px;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contact-container form {
+  margin-top: 20px;
+}
+
+.contact-container .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-container label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-container textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-container button:hover {
+  background-color: #0056b3;
+}
+
+.status-message {
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+
+.status-message.success {
+  color: #28a745; /* Green for success */
+}
+
+.status-message.error {
+  color: #dc3545; /* Red for error */
+}

@@ -1,0 +1,23 @@
+/* App.css */
+
+/* Ensure body and html have no overflow */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    
+  }
+  
+  /* Container to center the content */
+  .container {
+    max-width: 100%; /* Adjust based on your design */
+    margin: 0 auto;
+  }
+  
+  /* Optional: Add this class to your main content wrapper */
+  .main-content {
+    max-width: 100%;
+    overflow-x: hidden; /* Additional safeguard against overflow */
+  }
+  

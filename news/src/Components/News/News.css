@@ -1,0 +1,17 @@
+.news-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 60px); /* Adjust based on the height of your header */
+  }
+  
+  .news-container h1 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .news-container p {
+    font-size: 1rem;
+    color: black;
+  }
+  

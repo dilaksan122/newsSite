@@ -1,0 +1,279 @@
+/* Base styles for the reviews details container */
+.reviews-details-container {
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Title styles */
+.reviews-details-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333333;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Ensure heading is above other content */
+}
+
+/* Meta information container */
+.meta-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555555;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Meta information items */
+.meta-info div {
+  flex: 1;
+  text-align: center;
+}
+
+/* Image styles */
+.reviews-details-container img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Adjust the max height to reduce image height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  margin: 20px 0; /* Margin to ensure spacing above and below the image */
+  border-radius: 8px;
+  display: block;
+  z-index: 0; /* Ensure image is behind other content */
+}
+
+/* Content styles */
+.reviews-details-container div {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #555555;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Meta information strong tag styles */
+.meta-info strong {
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Share buttons container styles */
+.share-buttons3 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.share-buttons3 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.share-icons3 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.share-icon3 {
+  color: #333333;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+
+
+.fb{
+  color: #3b5998; /* Facebook blue */
+}
+
+.twitter {
+  color: #00acee; /* Twitter blue */
+}
+
+.linkedin{
+  color: #0e76a8; /* LinkedIn blue */
+}
+
+.pinterest{
+  color: #bd081c; /* Pinterest red */
+}
+
+.reddit {
+  color: #ff5700; /* Reddit orange */
+}
+/* Comments section styles */
+.comments-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.comments-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.comments-section textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.comments-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comments-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Success message styles */
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #28a745;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .reviews-details-container {
+    padding: 15px;
+  }
+
+  .reviews-details-container h2 {
+    font-size: 2rem;
+  }
+
+  .reviews-details-container div {
+    font-size: 1rem;
+  }
+
+  .meta-info {
+    flex-direction: column;
+  }
+
+  .meta-info div {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .share-buttons3 h3 {
+    font-size: 1.2rem;
+  }
+
+  .comments-section textarea {
+    height: 80px;
+  }
+}
+
+.related-news {
+  margin-top: 2em;
+}
+
+.related-news h2 {
+  margin-bottom: 1em;
+}
+
+.related-news ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.related-news-item {
+  margin-bottom: 1em;
+}
+
+.related-news-item img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5em;
+}
+
+@media (max-width: 480px) {
+  .reviews-details-container {
+    margin-top: 80px;
+  }
+
+  .reviews-details-container h2 {
+    margin-top: 100px;
+    font-size: 1.5rem;
+  }
+
+  .reviews-details-container div {
+    font-size: 0.9rem;
+  }
+
+  .meta-info {
+    flex-direction: column;
+  }
+
+  .meta-info div {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .share-buttons3 h3 {
+    font-size: 1rem;
+  }
+
+  .comments-section textarea {
+    height: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews-details-container {
+    max-width: 1000px;
+    padding: 30px;
+  }
+
+  .reviews-details-container h2 {
+    font-size: 3rem;
+  }
+
+  .reviews-details-container div {
+    font-size: 1.2rem;
+  }
+
+  .meta-info {
+    flex-direction: row;
+  }
+
+  .meta-info div {
+    text-align: center;
+  }
+
+  .share-buttons3 h3 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reviews-details-container {
+    margin-top: 180px;
+  }
+}

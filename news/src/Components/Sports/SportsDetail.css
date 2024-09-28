@@ -1,0 +1,239 @@
+.sports-details-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sports-details-container:hover {
+  transform: translateY(-5px);
+}
+
+.sports-details-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.sports-details-container img {
+width: 100%;
+  height:600px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.details-meta p {
+  font-size: 1.2em;
+  color: #444;
+}
+
+.details-meta strong {
+  color: #333;
+}
+
+.share-buttons2 {
+  margin-top: 20px;
+}
+
+.share-buttons2 h3 {
+  font-size: 1.5em;
+  color: #222;
+  text-align: center;
+}
+
+.share-icons2 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.share-icon2 {
+  font-size: 1.5em;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.fb{
+  color: #3b5998; /* Facebook blue */
+}
+
+.twitter {
+  color: #00acee; /* Twitter blue */
+}
+
+.linkedin{
+  color: #0e76a8; /* LinkedIn blue */
+}
+
+.pinterest{
+  color: #bd081c; /* Pinterest red */
+}
+
+.reddit {
+  color: #ff5700; /* Reddit orange */
+}
+
+.related-news {
+  margin-top: 40px;
+}
+
+.related-news h3 {
+  font-size: 1.5em;
+  color: #222;
+  text-align: center;
+}
+
+.related-news-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.related-news-item {
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.related-news-item:hover {
+  transform: translateY(-5px);
+}
+
+.related-news-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.related-news-item h4 {
+  font-size: 1.2em;
+  margin: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.comments-section {
+  margin-top: 40px;
+}
+
+.comments-section h3 {
+  font-size: 1.5em;
+  color: #222;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.comments-list {
+  margin-top: 20px;
+}
+
+.comment-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment-item p {
+  margin: 0;
+}
+
+.comment-item strong {
+  color: #007bff;
+}
+
+.comment-item span {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .sports-details-container {
+    padding: 15px;
+  }
+  .sports-details-container h2{
+    margin-top: 70px;
+  }
+
+  .sports-details-container h2 {
+    font-size: 2em;
+  }
+
+  .share-buttons2 h3 {
+    font-size: 1.2em;
+  }
+
+  .related-news-item {
+    max-width: 100%;
+  }
+
+  .comments-section textarea {
+    height: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sports-details-container {
+    padding: 10px;
+  }
+  .sports-details-container h2{
+    margin-top: 70px;
+  }
+
+
+  .sports-details-container h2 {
+    font-size: 1.8em;
+  }
+
+  .share-icons {
+    flex-direction: column;
+  }
+
+  .share-icon {
+    margin-bottom: 10px;
+  }
+
+  .related-news-item {
+    max-width: 100%;
+  }
+
+  .comments-section textarea {
+    height: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sports-details-container h2{
+    margin-top: 140px;
+  }
+
+}

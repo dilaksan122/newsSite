@@ -1,0 +1,112 @@
+/* Ensure the background color contrasts well with white text */
+.newsletter-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text color */
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .newsletter-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .newsletter-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .newsletter-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .newsletter-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .newsletter-button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .newsletter-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .newsletter-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: lightgreen;
+  }
+  
+  /* Media Queries for Small Devices */
+  @media (max-width: 600px) {
+    .newsletter-container {
+      padding: 20px 10px;
+    }
+  
+    .newsletter-container h1 {
+      font-size: 24px;
+    }
+  
+    .newsletter-container p {
+      font-size: 16px;
+    }
+  
+    .newsletter-input, .newsletter-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  /* Media Queries for Medium Devices */
+  @media (min-width: 601px) and (max-width: 768px) {
+    .newsletter-container {
+      padding: 30px 15px;
+    }
+  
+    .newsletter-container h1 {
+      font-size: 28px;
+    }
+  
+    .newsletter-container p {
+      font-size: 17px;
+    }
+  
+    .newsletter-input, .newsletter-button {
+      font-size: 15px;
+      padding: 12px;
+    }
+  }
+  

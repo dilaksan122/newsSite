@@ -1,0 +1,276 @@
+/* Header.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Container */
+.header {
+  width: 100%;
+  background: black;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+  transition: background 0.3s ease-in-out;
+}
+
+
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logoTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.title1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5bd057;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.title:hover {
+  transform: scale(1.05);
+  color: #f39c12;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 10px 0;
+  gap: 40px;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar li a {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #f39c12;
+  transform: translateY(-5px);
+}
+
+/* Navbar Hover Effects */
+.navbar li::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f39c12;
+  transition: width 0.4s ease-in-out;
+}
+
+.navbar li:hover::before {
+  width: 100%;
+}
+
+/* Modal Navigation */
+.modal-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.modal-navbar.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-navbar ul {
+  list-style: none;
+  text-align: center;
+}
+
+.modal-navbar li {
+  margin: 20px 0;
+}
+
+.modal-navbar li a {
+  font-size: 2rem;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-navbar li a:hover {
+  transform: scale(1.2);
+  color: #f39c12;
+}
+
+.modal-navbar li:last-child {
+  margin-top: 40px;
+}
+
+.modal-navbar li:last-child a {
+  font-size: 3rem;
+  color: #e74c3c;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.modal-navbar li:last-child a:hover {
+  color: #e74c3c;
+  transform: rotate(90deg);
+}
+
+/* Search Icon */
+.search-icon {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.search-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.navbar li {
+  animation: slideDown 0.4s ease forwards;
+}
+
+.modal-navbar ul li {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* Media Queries */
+
+/* Tablets and above */
+@media (min-width: 768px) {
+  .fa-bars {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .modal-navbar {
+    display: none;
+  }
+
+  .navbar li a {
+    font-size: 1.4rem;
+  }
+
+  .navbar li {
+    margin-right: 20px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .search-icon {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .modal-navbar li a {
+    font-size: 1.8rem;
+  }
+
+  .search-icon {
+    font-size: 1.5rem;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+  .navbar li a {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+}
